@@ -1,26 +1,125 @@
+.modal {
+  position: fixed;
+  z-index: 2;
+  background-color: white;
+  width: 70%;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px black;
+  padding: 16px;
+  left: 15%;
+  top: 30%;
+  box-sizing: border-box;
+  transition: all 0.3s ease-out;
+}
+
+.modal-backdrop {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  margin: 0 0;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.678);
+  z-index: 1;
+}
+
+@media (min-width: 600px) {
+  .modal {
+    width: 500px;
+    left: calc(50% - 250px);
+  }
+}
 td, th {
-    border: solid 1px black;
-    padding: 10px 10px;
-    text-align: left;
+  padding: 10px 10px;
+  text-align: left;
+}
+
+span {
+  font-size: 1.1em;
 }
 
 tr:nth-child(2n) {
-    background-color: #4e3f3f80;
+  background-color: #95959580;
 }
 
 table {
-    border-collapse: collapse;
-  }
+  border-collapse: collapse;
+}
 
-  a {
-      text-decoration: none;
-  }
+a {
+  text-decoration: none;
+  color: black;
+  cursor: default;
+}
 
-  i {
-      cursor: pointer;
-  }
+i, th > span {
+  cursor: pointer;
+}
 
-  tr:nth-child(2n):hover {
-      background-color: rgb(122, 102, 102);
-  }
+th > span:nth-child(2) {
+  cursor: default;
+}
 
+.add-todo-btn {
+  text-align: right;
+}
+
+.task-name-cell {
+  width: 140px;
+}
+
+.description-cell {
+  width: 720px;
+}
+
+.priority-cell {
+  width: 88px;
+}
+
+.status-cell {
+  width: 95px;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #373e52;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+}
+
+.App {
+  position: absolute;
+  top: 100px;
+  background-color: #fff;
+  box-shadow: 8px 8px 20px 1px;
+  padding: 20px;
+  height: 80%;
+  width: 1000px;
+  border-radius: 20px;
+}
+
+.add-todo-btn {
+  margin-bottom: 50px;
+}
+
+.add-todo-btn > .button {
+  background-color: #0b6efd;
+  cursor: pointer;
+  text-align: center;
+  color: #fff;
+  font-size: 1rem;
+  padding: 10px 10px;
+  font-weight: 600;
+  border-radius: 5px;
+  border: none;
+}
+
+.add-todo-btn > .button:hover {
+  background-color: #1C60CC;
+}
+
+/*# sourceMappingURL=index.css.map */

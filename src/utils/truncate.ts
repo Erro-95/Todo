@@ -1,4 +1,4 @@
-const Truncate = (text, maxChar) => {
+const Truncate = (text: string, maxChar: number) : string => {
     if (text.length <= maxChar) return text;
     else {
         const parsedText = text.trim().split('');

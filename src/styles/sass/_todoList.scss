@@ -1,0 +1,51 @@
+td, th {
+    padding: 10px 10px;
+    text-align: left;
+}
+
+span {
+    font-size: 1.1em;
+}
+
+tr:nth-child(2n) {
+    background-color: #95959580;
+    
+}
+
+table {
+    border-collapse: collapse;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    cursor: default;
+}
+
+i, th > span {
+    cursor: pointer;
+}
+
+th > span:nth-child(2) {
+    cursor: default;
+}
+
+.add-todo-btn {
+    text-align: right;
+}
+
+.task-name-cell {
+    width: 140px;
+}
+
+.description-cell {
+    width: 720px;
+}
+
+.priority-cell {
+    width: 88px;
+}
+
+.status-cell {
+    width: 95px;
+}
